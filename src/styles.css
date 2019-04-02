@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+.datatable-body-cell {
+  overflow-x: hidden;
+  vertical-align: top;
+  display: inline-block;
+  line-height: 1.625;
+  overflow: visible !important;
+  position: relative !important;
+}
+.ngx-datatable {
+  padding-bottom: 100px !important;
+}
+.pager li   {
+  
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 10px !important;
+}
+.pager li.active   {
+  
+  background: rgb(0, 173, 87) ;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 10px !important;
+  border-radius: 200px;
+}
+.pager li.active >a   {
+  
+  margin: 10px;
+  color: rgb(255, 255, 255) !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+.pager li >a{
+  
+  margin: 10px;
+  color: rgb(12, 12, 12) !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+.alert {
+  border: none !important ;  
+}
+
+.m-alert > span {
+  margin-right: 20px;
+}
+.inputTxt {
+  margin-top:10px;
+  margin-top:10px;
+}
+.m-login__head{
+  background: #fbfbfb;
+  padding: 50px;
+  border-radius: 15px;
+}
+.btn-85{
+  width: 85%;
+}
