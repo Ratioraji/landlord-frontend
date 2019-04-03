@@ -19,8 +19,12 @@ import { AuthGuard, RoleGuard } from './guards';
 import { ScriptLoaderService } from './services/script-loader.service';
 import { AlertService, UserService, RideService, DriverService } from './services';
 import { FormattedNumberPipe } from './pipes/formatted-number.pipe';
-import { PagesComponent } from './core/pages/pages.component';
 import { AssetsComponent } from './core/pages/assets/assets.component';
+import { TenantsComponent } from './core/pages/tenants/tenants.component';
+import { RentsComponent } from './core/pages/rents/rents.component';
+import { AssetsService } from './services/assets.service';
+import { TenantsService } from './services/tenants.service';
+import { rentsService } from './services/rents.service';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -30,8 +34,9 @@ export function tokenGetter() {
     CoreComponent,
     AppComponent,
     FormattedNumberPipe,
-    PagesComponent,
     AssetsComponent,
+    TenantsComponent,
+    RentsComponent,
   ],
   imports: [
     LayoutModule,
@@ -56,10 +61,14 @@ export function tokenGetter() {
     ScriptLoaderService,
     AuthGuard,
     RoleGuard,
+    AssetsService,
+    rentsService,
+    TenantsService,
     AlertService,
     UserService,
     RideService,
     DriverService,
+
   ],
   bootstrap: [AppComponent],
 })

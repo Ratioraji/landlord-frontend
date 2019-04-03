@@ -5,6 +5,8 @@ import { DefaultComponent } from './pages/default/default.component';
 import { AuthGuard, RoleGuard } from '../guards';
 import adminRoles from '../utils/adminRoles';
 import { AssetsComponent } from './pages/assets/assets.component';
+import { TenantsComponent } from './pages/tenants/tenants.component';
+import { RentsComponent } from './pages/rents/rents.component';
 
 const routes: Routes = [
   {
@@ -38,7 +40,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            component: AssetsComponent,
+            component: TenantsComponent,
           },
         ],
         canActivate: [AuthGuard]
@@ -49,18 +51,7 @@ const routes: Routes = [
         children: [
           {
             path: '',
-            component: AssetsComponent,
-          },
-        ],
-        canActivate: [AuthGuard]
-      },
-      {
-        path: 'all-tenants',
-        component: DefaultComponent,
-        children: [
-          {
-            path: '',
-            component: AssetsComponent,
+            component: RentsComponent,
           },
         ],
         canActivate: [AuthGuard]
