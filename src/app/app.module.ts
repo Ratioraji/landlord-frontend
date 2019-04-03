@@ -17,7 +17,7 @@ import { environment } from '../environments/environment';
 import { AuthGuard, RoleGuard } from './guards';
 
 import { ScriptLoaderService } from './services/script-loader.service';
-import { AlertService, UserService, RideService, DriverService } from './services';
+import { AlertService, UserService } from './services';
 import { FormattedNumberPipe } from './pipes/formatted-number.pipe';
 import { AssetsComponent } from './core/pages/assets/assets.component';
 import { TenantsComponent } from './core/pages/tenants/tenants.component';
@@ -65,9 +65,7 @@ export function tokenGetter() {
     rentsService,
     TenantsService,
     AlertService,
-    UserService,
-    RideService,
-    DriverService,
+    UserService
 
   ],
   bootstrap: [AppComponent],
